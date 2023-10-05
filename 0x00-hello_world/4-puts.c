@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- *Main - program that will print a string with puts
- *return: always returns the number 0 
+ *main - program that will print a string with puts
+ *return: always returns 0 (succes) 
  */
 
 int main(void){
