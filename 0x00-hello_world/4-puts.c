@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- *Main is for showing the infos of puts
- *we also return the value 0
+ *Main - program that will print a string with puts
+ *return: always returns the number 0
  * */
 
 int main(void){
