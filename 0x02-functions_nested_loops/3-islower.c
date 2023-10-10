@@ -4,9 +4,7 @@
 * _islower - checks if it's lowercase
 */
 int _islower(int c) {
-char a;
-a = c + '0';
-if (a >= 'a' && a <= 'z')
+if (c >= 97 && a <= 122)
 {
 return (1);
 }
