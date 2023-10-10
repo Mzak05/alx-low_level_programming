@@ -19,10 +19,14 @@ _putchar(',');
 }
 else
 {
-_putchar(' ');
 if (a >= 10)
 {
+_putchar(' ');
 _putchar(a / 10 + '0');
+}
+else
+{
+_putchar('  ');
 }
 _putchar(a % 10 + '0');
 if (j != 9)
