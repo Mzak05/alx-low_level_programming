@@ -28,7 +28,6 @@ _putchar('\n');
 }
 }
 }
-}
 else
 {
 for (j = 0; j < 4; j++)
@@ -43,6 +42,7 @@ _putchar(':');
 _putchar(k + '0');
 _putchar(l + '0');
 _putchar('\n');
+}
 }
 }
 }
