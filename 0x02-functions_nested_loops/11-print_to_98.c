@@ -10,17 +10,10 @@ if (n <= 98)
 {
 for (i = n; i <= 98; i++)
 {
-if (i == 98)
+printf("%d", i);
+if (i != 98)
 {
-printf(" %d\n", i);
-}
-else if (i == n)
-{
-printf("%d,", i);
-}
-else
-{
-printf(" %d,", i);
+printf(", ");
 }
 }
 }
@@ -28,18 +21,12 @@ else
 {
 for (i = n; i >= 98; i--)
 {
-if (i == 98)
+printf("%d", i);
+if (i != 98)
 {
-printf(" %d\n", i);
-}
-else if (i == n)
-{
-printf("%d,", i);
-}
-else
-{
-printf(" %d,", i);
+printf(", ");
+}    
 }
 }
-}
+printf("\n");
 }
