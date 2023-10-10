@@ -1,12 +1,12 @@
 #include "main.h"
 /**
-* _islower - checks if it's lowercase
+* _isalpha - checks if lowercase or upercase
 * @c: parametrer that translates characters to their ASCII form
 * Return: 1 if true and 0 if false
 */
 int _isalpha(int c)
 {
-if ( (c >= 65 && c <= 90) || (c >= 97 && c <= 122) )
+if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 {
 return (1);
 }
