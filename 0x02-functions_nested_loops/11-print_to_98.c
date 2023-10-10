@@ -24,7 +24,7 @@ printf(" %d,", i);
 }
 }
 }
-else if (n >= 98)
+else
 {
 for (i = n; i >= 98; i--)
 {
@@ -41,9 +41,5 @@ else
 printf(" %d,", i);
 }
 }
-}
-else
-{
-printf("%d\n", 98);
 }
 }
