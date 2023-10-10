@@ -2,7 +2,8 @@
 #include <ctype.h>
 /**
 * _islower - checks if it's lowercase
-* c - parametrer that translates characters to their ASCII form
+* @c: parametrer that translates characters to their ASCII form
+* Return: 1 if true and 0 if false
 */
 int _islower(int c)
 {
