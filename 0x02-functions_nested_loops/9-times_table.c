@@ -15,25 +15,22 @@ a = i * j;
 if (j == 0)
 {
 _putchar(a + '0');
+_putchar(',');
 }
 else
 {
+_putchar(' ');
 if (a >= 10)
 {
-_putchar(' ');
 _putchar(a / 10 + '0');
 }
-else
-{
-_putchar(' ');
 _putchar(a % 10 + '0');
-}
 if (j != 9)
 {
 _putchar(',');
 }
 }
-_putchar('\n');
 }
+_putchar('\n');
 }
 }
