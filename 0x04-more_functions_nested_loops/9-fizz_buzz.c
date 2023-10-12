@@ -3,11 +3,12 @@
 * main - print from 1 to 100
 * Return: returns 0
 */
-int main() {
+int main(void)
+{
 int i;
 for (i = 1; i <= 100; i++)
 {
-if(i == 100)
+if (i == 100)
 {
 printf("Buzz");
 }
@@ -29,5 +30,5 @@ printf("%d ", i);
 }
 }
 printf("\n");
-    return 0;
+return (0);
 }
