@@ -5,7 +5,7 @@
 * @c: parametrer that translates characters to their ASCII form
 * Return: 1 if true and 0 if false
 */
-int _isdigit(int c)
+int _isupper(int c)
 {
 if (c >= 65 && c <= 90)
 {
