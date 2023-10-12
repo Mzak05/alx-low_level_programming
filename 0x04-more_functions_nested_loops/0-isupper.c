@@ -1,13 +1,13 @@
 #include "main.h"
 #include <ctype.h>
 /**
-* _isdigit - checks if it's digit
+* _isupper - checks if it's upercase
 * @c: parametrer that translates characters to their ASCII form
 * Return: 1 if true and 0 if false
 */
 int _isdigit(int c)
 {
-if (c >= 48 && c <= 57)
+if (c >= 65 && c <= 90)
 {
 return (1);
 }
