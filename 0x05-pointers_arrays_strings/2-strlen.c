@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 /**
 * _strlen - give length
 * @s: pointer
@@ -8,9 +7,10 @@
 int _strlen(char *s)
 {
 int i;
-for (i = 0; *s != '\0'; i++)
+while (*s != '\0')
 {
-++i;
+i++;
+s++;
 }
 return (i);
 }
