@@ -7,8 +7,10 @@ void rev_string(char *s)
 {
 int i;
 int c;
+int k;
 char o;
 c = 0;
+k = 0;
 for (i = 0; s[i] != '\0'; i++)
 {
 c++;
@@ -16,7 +18,8 @@ c++;
 for (i = c - 1; i >= 0; i--)
 {
 o = s[i];
-s[i] = s[i - 1];
-s[i - 1] = o;
+s[i] = s[k];
+s[k] = o;
+k++;
 }
 }
