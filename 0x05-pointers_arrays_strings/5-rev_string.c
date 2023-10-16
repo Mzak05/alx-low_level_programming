@@ -10,16 +10,17 @@ int c;
 int k;
 char o;
 c = 0;
-k = 0;
 for (i = 0; s[i] != '\0'; i++)
 {
 c++;
 }
-for (i = c - 1; i >= 0; i--)
+i = 0;
+k = c/2;
+while (k--)
 {
-o = s[i];
-s[i] = s[k];
-s[k] = o;
-k++;
+o = s[c - i - 1];
+s[c - i - 1] = s[i];
+s[i] = o;
+i++;
 }
 }
