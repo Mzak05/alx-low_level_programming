@@ -14,12 +14,13 @@ c++;
 }
 if (c % 2)
 {
-for (i = c / 2; str[i] != '\0'; i++)
+for (i = c / 2 + 1; str[i] != '\0'; i++)
 {
 _putchar(str[i]);
 }
 }
-else{
+else
+{
 for (i = (c - 1) / 2; str[i] != '\0'; i++)
 {
 _putchar(str[i]);
