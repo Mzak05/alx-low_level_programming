@@ -21,7 +21,7 @@ _putchar(str[i]);
 }
 else
 {
-for (i = (c - 1) / 2; str[i] != '\0'; i++)
+for (i = (c - 1) / 2 + 1; str[i] != '\0'; i++)
 {
 _putchar(str[i]);
 }
