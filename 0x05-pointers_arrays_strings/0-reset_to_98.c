@@ -6,6 +6,6 @@
 */
 int reset_to_98(int *n)
 {
-*c=98;
-return (*c);
+*n=98;
+return (*n);
 }
