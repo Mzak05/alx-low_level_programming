@@ -3,7 +3,7 @@
 * print_rev - give reverse
 * @s: pointer
 */
-void _puts(char *s)
+void print_rev(char *s)
 {
 int i;
 int c;
