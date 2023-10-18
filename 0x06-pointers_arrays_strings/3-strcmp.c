@@ -11,6 +11,8 @@ int i;
 int j;
 int c;
 int a;
+a = 0;
+c = 0;
 for (i = 0; s1[i] != '\0'; i++)
 {
 a++;
