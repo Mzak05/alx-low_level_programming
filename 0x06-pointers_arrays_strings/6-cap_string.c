@@ -4,22 +4,22 @@
 * @c:pointer
 * Return: result
 */
-char *cap_string(char *str)
+char *cap_string(char *c)
 {
 int i = 0;
-while (str[i])
+while (c[i])
 {
-if (str[i] >= 'a' && str[i] <= 'z')
+if (c[i] >= 'a' && c[i] <= 'z')
 {
-if (i == 0 || str[i - 1] == ' ' || str[i - 1] == '\t' || str[i - 1] == '\n' ||
-str[i - 1] == ',' || str[i - 1] == ';' || str[i - 1] == '.' || str[i - 1] == '!' ||
-str[i - 1] == '?' || str[i - 1] == '"' || str[i - 1] == '(' || str[i - 1] == ')' ||
-str[i - 1] == '{' || str[i - 1] == '}')
+if (i == 0 || c[i - 1] == ' ' || c[i - 1] == '\t' || c[i - 1] == '\n' ||
+c[i - 1] == ',' || c[i - 1] == ';' || c[i - 1] == '.' || c[i - 1] == '!' ||
+c[i - 1] == '?' || c[i - 1] == '"' || c[i - 1] == '(' || c[i - 1] == ')' ||
+c[i - 1] == '{' || c[i - 1] == '}')
 {
-str[i] -= 32;
+c[i] -= 32;
 }
 }
 i++;
 }
-return (str);
+return (c);
 }
