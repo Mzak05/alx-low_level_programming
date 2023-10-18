@@ -5,32 +5,24 @@
 * @s2: pointer
 * Return: data
 */
-int _strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2) {
+for (int i = 0; s1[i] != '\0' && s2[i] != '\0'; i++)
 {
-int i;
-int j;
-int c;
-int a;
-a = 0;
-c = 0;
-for (i = 0; s1[i] != '\0'; i++)
+if (s1[i] != s2[i])
 {
-a++;
+return s1[i] - s2[i];
 }
-for (j = 0; s2[j] != '\0'; j++)
-{
-c++;
 }
-if (a > c)
+if (s1[i] == '\0' && s2[i] == '\0')
 {
-return (15);
+return 0;
 }
-else if (c > a)
+else if (s1[i] == '\0')
 {
-return (-15);
+return -s2[i];
 }
 else
 {
-return (0);
+return s1[i];
 }
 }
