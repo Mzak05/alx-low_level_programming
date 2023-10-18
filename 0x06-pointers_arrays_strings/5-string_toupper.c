@@ -7,13 +7,14 @@
 char *string_toupper(char *c)
 {
 int i;
-char d[100];
 char r;
 for (i = 0; c[i] != '\0'; i++)
 {
-r = c[i] - 32
-d[i] = r;
+if (c[i] >= 'a' && c[i] <= 'z')
+{
+r = c[i] - 32;
+c[i] = r;
 }
-d[i] = '\0';
-return (d);
+}
+return (c);
 }
