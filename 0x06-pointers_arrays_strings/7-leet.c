@@ -17,6 +17,7 @@ for (j = 0; r[j] != '\0'; j++)
 if (c[i] == r[j])
 {
 c[i] = v[j];
+break;
 }
 }
 }
