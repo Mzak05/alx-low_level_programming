@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
 * *_memset - give n values
 * @s: pointer
@@ -8,9 +8,10 @@ include "main.h"
 */
 char *_memset(char *s, char b, unsigned int n)
 {
-for (unsigned int i = 0; i < n; i++)
+unsigned int j
+for (j = 0; j < n; j++)
 {
-s[i] = b;
+s[j] = b;
 }
 return (s);
 }
