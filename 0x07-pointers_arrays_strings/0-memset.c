@@ -1,10 +1,10 @@
 include "main.h"
 /**
-* _memset - fills n bytes of memory
-* @s: pointer to start of memory area
-* @b: constant byte to fill with
-* @n: num bytes to fill in
-* Return: pointer to beginning of memory area s
+* *_memset - give n values
+* @s: pointer
+* @b: variable
+* @n: second variable
+* Return: value
 */
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -12,5 +12,6 @@ for (int i = 0; i < n; i++)
 {
 *s++ = b;
 }
-return s - n;
+char *r = s;
+return (*r);
 }
