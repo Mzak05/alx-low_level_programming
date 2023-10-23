@@ -25,6 +25,10 @@ break;
 }
 }
 }
+else
+{
+break;
+}
 }
 return (k);
 }
