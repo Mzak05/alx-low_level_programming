@@ -2,6 +2,7 @@
 /**
 * factorial - give factorial
 * @n: number
+* Return: value
 */
 int factorial(int n)
 {
