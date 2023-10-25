@@ -5,15 +5,9 @@
 */
 void _print_rev_recursion(char *s)
 {
-int i;
-int c; 
-c = 0;
-for (i = 0; s[i] != '\0'; i++)
+if (*s != '\0')
 {
-c++;
-}
-for (i = 0; s[i] != '\0'; i++)
-{
-_putchar(s[c-i]);
+_print_rev_recursion(s + 1);
+_putchar(*s);
 }
 }
