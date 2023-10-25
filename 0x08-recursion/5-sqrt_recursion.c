@@ -1,8 +1,6 @@
 #include "main.h"
 /**
-* _sqrt_recursion - give sqrt
-* _sql - give sqrt
-* @n: number
+* _sql - give sql
 * @n: number
 * @a: number
 * Return: value
@@ -19,6 +17,11 @@ return (-1);
 }
 return (_sql(n, a + 1));
 }
+/**
+* _sqrt_recursion - give sqrt
+* @n: number
+* Return: value
+*/
 int _sqrt_recursion(int n)
 {
 return (_sql(n, 1));
