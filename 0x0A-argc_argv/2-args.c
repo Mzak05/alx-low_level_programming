@@ -3,7 +3,7 @@
  * main - print infos
  * @argc: data
  * @argv: data
- * Return:0
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
@@ -12,6 +12,5 @@ for (i = 0; i < argc; i++)
 {
 printf("%s\n", argv[i]);
 }
-printf("\n");
 return (0);
 }
