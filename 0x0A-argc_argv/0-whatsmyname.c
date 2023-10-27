@@ -2,7 +2,7 @@
 /**
  * main - print infos
  * @argc: data
- * @argc: data
+ * @argv: data
  * Return:0
  */
 int main(int argc, char const *argv[])
