@@ -9,24 +9,22 @@
 */
 char *str_concat(char *s1, char *s2)
 {
-if (s1 == NULL && s2 != NULL)
+char *re;
+int a;
+int b;
+int total;
+if (s1 == NULL)
 {
-return (s2);
+s1 = "";
 }
-else if (s1 != NULL && s2 == NULL)
+if (s2 == NULL)
 {
-return (s1);
+s2 = "";
 }
-else if (s1 == NULL && s2 == NULL)
-{
-return (NULL);
-}
-else
-{
-int a = strlen(s1);
-int b = strlen(s2);
-int total = a + b;
-char *re = (char *)malloc((total + 1) * sizeof(char));
+a = strlen(s1);
+b = strlen(s2);
+total = a + b;
+re = (char *)malloc((total + 1) * sizeof(char));
 if (re == NULL)
 {
 return (NULL);
@@ -34,6 +32,4 @@ return (NULL);
 strcpy(re, s1);
 strcat(re, s2);
 return (re);
-}
-return (NULL);
 }
