@@ -21,7 +21,7 @@ if (e == NULL)
 {
 return (NULL);
 }
-for (i = 0; i <= s - 1; i++)
+for (i = 0; i <= s; i++)
 {
 e[i] = min;
 min++;
