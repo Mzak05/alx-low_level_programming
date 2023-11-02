@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* *malloc_checked: info
+* *malloc_checked - info
 * @b: info
+* Return: return
 */
 void *malloc_checked(unsigned int b)
 {
@@ -12,5 +13,5 @@ if (a == NULL)
 {
 exit(98);
 }
-return(a);
+return (a);
 }
