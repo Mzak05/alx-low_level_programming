@@ -8,7 +8,8 @@
 * @n:  n
 * Return: return
 */
-char *string_nconcat(char *s1, char *s2, unsigned int n) {
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
 char *s;
 int a, b, c;
 int i;
@@ -25,7 +26,7 @@ else
 c = a + n;
 s = (char *)malloc(c + 1);
 if (s == NULL)
-return NULL;
+return (NULL);
 for (i = 0; i < a; i++)
 {
 s[i] = s1[i];
