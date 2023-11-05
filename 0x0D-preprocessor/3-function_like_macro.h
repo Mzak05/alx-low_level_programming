@@ -3,6 +3,6 @@
 
 #include <stdio.h>
 
-#define ABS(w) (w < 0 ? -w : w)
+#define ABS(w) ((w) < 0 ? -(w) : (w))
 
 #endif
