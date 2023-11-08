@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
-* main - ...
-* @argc: ...
-* @argv: ...
-* Return: ...
+* main - fct
+* @argc: fct
+* @argv: fct
+* Return: return
 */
 int main(int argc, char *argv[])
 {
