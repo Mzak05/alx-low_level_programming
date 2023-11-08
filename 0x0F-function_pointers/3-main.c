@@ -24,4 +24,3 @@ info = get_op_func(argv[2]);
 printf("%d\n", info(atoi(argv[1]), atoi(argv[3])));
 return (0);
 }
-
