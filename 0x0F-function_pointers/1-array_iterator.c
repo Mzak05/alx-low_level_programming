@@ -16,6 +16,6 @@ return;
 i = 0;
 while(i < size){
 action(array[i]);
-}
 i++;
+}
 }
