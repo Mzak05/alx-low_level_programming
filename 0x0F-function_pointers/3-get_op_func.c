@@ -15,7 +15,7 @@ op_t ops[] = {
 {"*", op_mul},
 {"/", op_div},
 {"%", op_mod},
-{NULL, NULL},
+{NULL, NULL}
 };
 i = 0;
 while (ops[i].op != NULL)
@@ -26,5 +26,5 @@ return (ops[i].f);
 }
 i++;
 }
-return (0);
+return (NULL);
 }
