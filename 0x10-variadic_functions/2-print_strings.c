@@ -1,9 +1,16 @@
 #include "variadic_functions.h"
 /**
+<<<<<<< HEAD
  * print_strings - info
  * @separator: info
  * @n: info
  * @...: info
+=======
+ * print_strings - args
+ * @separator: args
+ * @n: args
+ * @...: infos
+>>>>>>> set
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
@@ -13,12 +20,11 @@ va_list args;
 char *current_str;
 unsigned int index;
 index = 1;
-current_str = va_arg(args, char *);
 va_start(args, n);
 printf("%s", va_arg(args, char *));
 while (index < n)
 {
-char *current_str = va_arg(args, char *);
+current_str = va_arg(args, char *);
 if (!current_str)
 {
 current_str = "(nil)";
