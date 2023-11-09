@@ -1,5 +1,10 @@
 #include "variadic_functions.h"
-
+/**
+ * print_strings - info
+ * @separator: info
+ * @n: info
+ * @...: info
+ */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 if (n > 0)
