@@ -24,7 +24,7 @@ printf("[%d] %s\n", 0, "(nil)");
 }
 else
 {
-printf("[%d] %s\n", pp->len, pp->str);
+printf("[%u] %s\n", pp->len, pp->str);
 }
 c += 1;
 pp = pp->next;
