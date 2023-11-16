@@ -16,7 +16,7 @@ return (0);
 }
 else
 {
-while (pp->next != NULL)
+while (pp != NULL)
 {
 if (pp->str == NULL)
 {
@@ -29,7 +29,6 @@ printf("[%d] %s\n", pp->len, pp->str);
 c += 1;
 pp = pp->next;
 }
-printf("[%d] %s\n", pp->len, pp->str);
 }
 return (c);
 }
