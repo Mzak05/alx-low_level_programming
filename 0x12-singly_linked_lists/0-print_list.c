@@ -1,22 +1,34 @@
-#include <stdio.h>
 #include "lists.h"
+#include <stdio.h>
 /**
-* print_list - data
-* @h: datas
-* Return: return
+* print_list - info
+* @h: info
+* Return: Num
 */
 size_t print_list(const list_t *h)
 {
-size_t c = 0;
-const list_t *pp = h;
-while (pp)
+const list_t *pp;
+size_t c;
+c = 0;
+pp = h;
+if (pp == NULL)
 {
-if (!pp->str)
-printf("[0] (nil)\n");
+return (0);
+}
 else
+{
+while (pp != NULL)
+{
+if (pp->str == NULL)
+{
+printf("[0] (nil)\n");
+}
+else
+{
 printf("[%u] %s\n", pp->len, pp->str);
+}
+c += 1;
 pp = pp->next;
-c++;
+}
 }
 return (c);
-}
