@@ -6,26 +6,28 @@
 */
 size_t print_list(const list_t *h)
 {
+const list_t *pp;
 size_t c;
 c = 0;
-if (h == NULL)
+pp = h;
+if (pp == NULL)
 {
 return (0);
 }
 else
 {
-while (h != NULL)
+while (pp != NULL)
 {
-if (h->str == NULL)
+if (pp->str == NULL)
 {
 printf("[%d] %s\n", 0, "(nil)");
 }
 else
 {
-printf("[%d] %s\n", h->len, h->str);
+printf("[%d] %s\n", pp->len, pp->str);
 }
 c += 1;
-h = h->next;
+pp = pp->next;
 }
 }
 return (c);
