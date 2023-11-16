@@ -20,7 +20,7 @@ while (pp != NULL)
 {
 if (pp->str == NULL)
 {
-printf("[0] (nil)\n");
+printf("[%d] %s\n", 0, "(nil)");
 }
 else
 {
