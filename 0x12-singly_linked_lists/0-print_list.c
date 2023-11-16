@@ -10,7 +10,7 @@ const list_t *pp;
 size_t c;
 c = 0;
 pp = h;
-if (pp == NULL)
+if (pp->next == NULL)
 {
 return (0);
 }
@@ -29,6 +29,7 @@ printf("[%d] %s\n", pp->len, pp->str);
 c += 1;
 pp = pp->next;
 }
+printf("[%d] %s\n", pp->len, pp->str);
 }
 return (c);
 }
