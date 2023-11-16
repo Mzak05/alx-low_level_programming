@@ -10,13 +10,13 @@ const list_t *pp;
 size_t c;
 c = 0;
 pp = h;
-if (pp->next == NULL)
+if (pp == NULL)
 {
 return (0);
 }
 else
 {
-while (pp != NULL)
+while (pp->next != NULL)
 {
 if (pp->str == NULL)
 {
