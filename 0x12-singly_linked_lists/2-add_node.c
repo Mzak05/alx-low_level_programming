@@ -19,6 +19,10 @@ for (i = 0; str[i] != '\0'; i++)
 c++;
 }
 pp = malloc(sizeof(list_t));
+if (pp == NULL)
+{
+return (NULL);
+}
 pp->str = strdup(str);
 pp->len = c;
 pp->next = (*head);
