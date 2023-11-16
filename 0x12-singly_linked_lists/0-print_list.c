@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 /**
 * print_list - info
 * @h: info
@@ -20,7 +21,7 @@ while (pp != NULL)
 {
 if (pp->str == NULL)
 {
-printf("[%d] %s\n", 0, "(nil)");
+printf("[0] (nil)\n");
 }
 else
 {
