@@ -12,6 +12,7 @@ if (head == NULL)
 {
 return (0);
 }
+s = 0;
 while (head != NULL)
 {
 s = s  + head->n;
