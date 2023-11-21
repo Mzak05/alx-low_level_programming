@@ -6,7 +6,8 @@
  * @index: index
  * Return: info
  */
-listint_t *get_nodeint_at_index(listint_t *head, unsigned int index) {
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
+{
 unsigned int i;
 listint_t *p;
 p = head;
@@ -15,11 +16,13 @@ if (head == NULL)
 {
 return (NULL);
 }
-while (p != NULL && i < index) {
+while (p != NULL && i < index)
+{
 p = p->next;
 i++;
 }
-if (p != NULL) {
+if (p != NULL)
+{
 return (p);
 }
 return (NULL);
