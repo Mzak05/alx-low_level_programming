@@ -8,9 +8,9 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
+unsigned long int cou = 1UL << index;
 if (index > 64)
 return (-1);
-unsigned long int cou = 1UL << index;
 *n = (*n | cou);
 return (1);
 }
