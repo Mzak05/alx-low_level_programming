@@ -5,7 +5,8 @@
  * @letters: info
  * Return: info
  */
-ssize_t read_textfile(const char *filename, size_t letters) {
+ssize_t read_textfile(const char *filename, size_t letters)
+{
 ssize_t file_descriptor, read_bytes, written_bytes;
 char *buffer;
 if (filename == NULL)
