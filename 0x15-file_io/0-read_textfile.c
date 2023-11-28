@@ -7,22 +7,17 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-ssize_t ahmed, readus, terra;
-char *buffer;
-if (filename == NULL)
+char *buf;
+ssize_t ff;
+ssize_t x;
+ssize_t p;
+ff = open(filename, O_RDONLY);
+if (ff == -1)
 return (0);
-buffer = malloc(sizeof(char) * letters);
-if (buffer == NULL)
-return (0);
-ahmed = open(filename, O_RDONLY);
-readus = read(ahmed, buffer, letters);
-terra = write(STDOUT_FILENO, buffer, readus);
-if (ahmed == -1 || readus == -1 || terra == -1 || terra != readus)
-{
-free(buffer);
-return (0);
-}
-free(buffer);
-close(ahmed);
-return (terra);
+buf = malloc(sizeof(char) * letters);
+p = read(ff, buf, letters);
+x = write(STDOUT_FILENO, buf, p);
+free(buf);
+close(ff);
+return (x);
 }
